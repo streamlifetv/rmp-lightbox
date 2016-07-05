@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link href="css/rmp-lightbox.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.radiantmediatechs.com/rmp/3.4.2/js/rmp.min.js"></script>
+  <script src="js/rmp-lightbox.js"></script>
+</head>
+
+<body>
+  <button id="rmp-lightbox">Open</button>
+  <script>
+    var bitrates = {
+      mp4: [
+        'https://www.radiantmediaplayer.com/media/bbb-360p.mp4',
+        'https://www.radiantmediaplayer.com/media/bbb-576p.mp4',
+        'https://www.radiantmediaplayer.com/media/bbb-720p.mp4'
+      ],
+      // Optional WebM fallback - may be useful for older browsers
+      webm: [
+        'https://www.radiantmediaplayer.com/media/bbb-360p.webm'
+      ]
+    };
+    var settings = {
+      bitrates: bitrates,
+      delayToFade: 3000,
+      width: 960,
+      height: 540,
+      initialBitrate: 1,
+      // use ads if wanted (license key is needed to activate ads)
+      //ads: true,
+      //adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=',
+      poster: 'https://www.radiantmediaplayer.com/images/poster-rmp-showcase.jpg'
+    };
+    var element = 'rmpPlayer';
+    rmp = new RadiantMP(element);
+    rmp.initLightbox(settings, 'rmp-lightbox');
+  </script>
+</body>
+
+</html>
