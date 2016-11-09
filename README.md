@@ -16,6 +16,11 @@ See index.html for a working example. If you use our paid features a license key
 ## Example
 An example of the implementation can be viewed here: [https://www.radiantmediaplayer.com/docs/3.0/video-overlays.html](https://www.radiantmediaplayer.com/docs/3.0/video-overlays.html)
 
+## Sizing consideration
+By default rmp-lightbox uses a size of 960x540 pixels for the overlay window. 
+It uses CSS media queries to be responsive and fit mobile devices. You can review them 
+in file rmp-lightbox.css and bring any modification you may want.
+
 ## Issues
 Issues should be submitted in this GitHub page. We will do our best to review them.
 

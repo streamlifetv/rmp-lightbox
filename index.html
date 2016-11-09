@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <link href="css/rmp-lightbox.css" rel="stylesheet" type="text/css">
-  <script src="https://cdn.radiantmediatechs.com/rmp/3.4.2/js/rmp.min.js"></script>
+  <script src="https://cdn.radiantmediatechs.com/rmp/v3/latest/js/rmp.min.js"></script>
   <script src="js/rmp-lightbox.js"></script>
 </head>
 
@@ -35,8 +35,8 @@
       //adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=',
       poster: 'https://www.radiantmediaplayer.com/images/poster-rmp-showcase.jpg'
     };
-    var element = 'rmpPlayer';
-    rmp = new RadiantMP(element);
+    var elementID = 'rmpPlayer';
+    rmp = new RadiantMP(elementID);
     rmp.initLightbox(settings, 'rmp-lightbox');
   </script>
 </body>

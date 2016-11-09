@@ -1,6 +1,6 @@
 /**
  * @license Copyright (c) 2015-2016 Radiant Media Player | https://www.radiantmediaplayer.com
- * rmp-lightbox | https://github.com/radiantmediaplayer/rmp-lightbox
+ * rmp-lightbox 0.1.1 | https://github.com/radiantmediaplayer/rmp-lightbox
  * Released under the MIT license
  * Contact information: https://www.radiantmediaplayer.com/contact.html
  */
@@ -57,20 +57,20 @@
   };
 
   // append lightbox to DOM when first requested
-  var _appendBackground = function (element, settings) {
+  var _appendBackground = function (elementID, settings) {
     if (this.debug) {
       console.log('RMP-lightbox: append lightbox to DOM on first request');
     }
     this.lightboxBackground = document.createElement('div');
     this.lightboxBackground.className = 'rmp-lightbox-background';
-    this.lightboxBackground.id = 'rmp-lightbox' + element;
+    this.lightboxBackground.id = 'rmp-lightbox' + elementID;
     this.lightboxBackground.style.display = 'block';
 
     var wrapper = document.createElement('div');
     wrapper.className = 'rmp-lightbox-wrapper';
 
     var content = document.createElement('div');
-    content.id = element;
+    content.id = elementID;
 
     var closeButton = document.createElement('div');
     closeButton.className = 'rmp-lightbox-close rmp-i rmp-i-close';
