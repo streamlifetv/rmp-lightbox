@@ -2,16 +2,41 @@
 <html>
 
 <head>
-  <title>TODO supply a title</title>
+  <title>rmp-lightbox example - Radiant Media Player</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <meta name="description" content="Example of implementation for our video overlays extension.">
+  <meta name="keywords" content="overlays,lightbox,documentation,html5,player,javascript,mobile">
+  <meta name="author" content="Radiant Media Player">
+  <meta property="og:title" content="rmp-lightbox example - Radiant Media Player">
+  <meta property="og:description" content="Example of implementation for our video overlays extension.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.radiantmediaplayer.com/docs/latest/rmp-lightbox/">
+  <meta property="og:image" content="https://www.radiantmediaplayer.com/images/radiantmediaplayer-logo-640.jpg">
+  <link rel="canonical" href="https://www.radiantmediaplayer.com/docs/latest/rmp-lightbox/">
+  <link rel="icon" type="image/png" href="https://www.radiantmediaplayer.com/images/radiantmediaplayer-icon.png">
+  <link rel="apple-touch-icon" href="https://www.radiantmediaplayer.com/images/apple-touch-icon.png">
   <link href="css/rmp-lightbox.css" rel="stylesheet" type="text/css">
-  <script src="https://cdn.radiantmediatechs.com/rmp/v3/latest/js/rmp.min.js"></script>
+  <script src="https://cdn.radiantmediatechs.com/rmp/v4/latest/js/rmp.min.js"></script>
   <script src="js/rmp-lightbox.js"></script>
 </head>
 
 <body>
-  <button id="rmp-lightbox">Open</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center">
+          <h1>rmp-lightbox example</h1>
+          <h2>Radiant Media Player</h2>
+          <div><a href="https://www.radiantmediaplayer.com">Go back to radiantmediaplayer.com</a></div>
+          <div><a href="https://github.com/radiantmediaplayer/rmp-lightbox">Go back to GitHub</a></div>
+          <h4>Click open to see rmp-lightbox at work!</h4>
+          <button id="rmp-lightbox">Open</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
     var bitrates = {
       mp4: [
@@ -25,12 +50,12 @@
       ]
     };
     var settings = {
+      licenseKey: 'Kl8lbz16cz1rN2l2enM9Z2M9NnZvMnllaT9yb201ZGFzaXMzMGRiMEElXyo=',
       bitrates: bitrates,
       delayToFade: 3000,
       width: 960,
       height: 540,
       initialBitrate: 1,
-      // use ads if wanted (license key is needed to activate ads)
       //ads: true,
       //adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=',
       poster: 'https://www.radiantmediaplayer.com/images/poster-rmp-showcase.jpg'

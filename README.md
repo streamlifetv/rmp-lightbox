@@ -1,6 +1,7 @@
 # rmp-lightbox
 
-rmp-lightbox is an open-source extension for [Radiant Media Player](https://www.radiantmediaplayer.com) allowing the use of the player in an overlaid HTML element (a.k.a. "lightbox"). 
+rmp-lightbox is an open-source extension for [Radiant Media Player](https://www.radiantmediaplayer.com) 
+allowing the use of the player in an overlaid HTML element (a.k.a. "lightbox"). 
 
 This extension can be used as so or tuned with JavaScript/CSS to better fit your project design.
 
@@ -11,10 +12,11 @@ This extension can be used as so or tuned with JavaScript/CSS to better fit your
 - Easily extended with JavaScript and CSS
 
 ## Usage
-See index.html for a working example. If you use our paid features a license key is required.
+See index.html for a working example
 
 ## Example
-An example of the implementation can be viewed here: [https://www.radiantmediaplayer.com/docs/3.0/video-overlays.html](https://www.radiantmediaplayer.com/docs/3.0/video-overlays.html)
+An example of the implementation can be viewed here: 
+[https://www.radiantmediaplayer.com/docs/latest/video-overlays.html](https://www.radiantmediaplayer.com/docs/latest/video-overlays.html)
 
 ## Sizing consideration
 By default rmp-lightbox uses a size of 960x540 pixels for the overlay window. 
@@ -27,4 +29,5 @@ Issues should be submitted in this GitHub page. We will do our best to review th
 ## License
 rmp-lightbox is released under MIT
 
-Radiant Media Player has its own license which can be found here: [https://www.radiantmediaplayer.com/terms-of-service.html](https://www.radiantmediaplayer.com/terms-of-service.html)
+Radiant Media Player has its own license which can be found here: 
+[https://www.radiantmediaplayer.com/terms-of-service.html](https://www.radiantmediaplayer.com/terms-of-service.html)
