@@ -44,13 +44,15 @@
       event.preventDefault();
     }
     if (this.lightboxOnStage) {
-      if (event && event.target &&
-        (this.fw.hasClass(event.target, 'rmp-lightbox-wrapper') ||
-          this.fw.hasClass(event.target, 'rmp-video') ||
-          this.fw.hasClass(event.target, 'rmp-poster-img') ||
-          this.fw.hasClass(event.target, 'rmp-container'))) {
+      // window.rmpFW is defined in index.html
+      if (event && event.target && window.rmpFW &&
+        (window.rmpFW.hasClass(event.target, 'rmp-lightbox-wrapper') ||
+          window.rmpFW.hasClass(event.target, 'rmp-video') ||
+          window.rmpFW.hasClass(event.target, 'rmp-poster-img') ||
+          window.rmpFW.hasClass(event.target, 'rmp-container'))) {
         return;
       } else {
+        // if we click outside the lightbox we close it
         _closeLightbox.call(this);
       }
     }
